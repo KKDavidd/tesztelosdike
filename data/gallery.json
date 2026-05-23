@@ -1,0 +1,28 @@
+{
+  "items": [
+    {
+      "image": "img/Freya-Badge.png",
+      "title": "Freya",
+      "type": "Badge",
+      "category": "finished"
+    },
+    {
+      "image": "img/Marshall-MiniYCH.png",
+      "title": "Marshall",
+      "type": "Mini YCH",
+      "category": "finished"
+    },
+    {
+      "image": "img/Toffee-PFP-Sketch.png",
+      "title": "Toffee",
+      "type": "PFP Sketch",
+      "category": "sketch"
+    },
+    {
+      "image": "img/Darky-PFPSketch.png",
+      "title": "Darky",
+      "type": "PFP Sketch",
+      "category": "sketch"
+    }
+  ]
+}
