@@ -1,0 +1,22 @@
+backend:
+  name: github
+  repo: TE_GITHUB_NEVED/REPO_NEVE
+  branch: main
+media_folder: "img"
+public_folder: "img"
+collections:
+  - name: "gallery_data"
+    label: "Galéria Adatok"
+    files:
+      - label: "Képek és Rajzok"
+        name: "gallery"
+        file: "data/gallery.json"
+        fields:
+          - label: "Galéria Elemek"
+            name: "items"
+            widget: "list"
+            fields:
+              - {label: "Kép", name: "image", widget: "image"}
+              - {label: "Karakter Név", name: "title", widget: "string"}
+              - {label: "Típus (pl. Badge, Halfbody)", name: "type", widget: "string"}
+              - {label: "Kategória", name: "category", widget: "select", options: ["finished", "sketch"]}
