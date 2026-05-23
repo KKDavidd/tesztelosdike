@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: TE_GITHUB_NEVED/REPO_NEVE
+  repo: KKDavidd/tesztelosdike
   branch: main
 media_folder: "img"
 public_folder: "img"
