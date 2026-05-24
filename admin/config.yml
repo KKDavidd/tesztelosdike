@@ -1,5 +1,6 @@
 backend:
-  name: git-gateway
+  name: github
+  repo: KKDavidd/tesztelosdike
   branch: main
 media_folder: "img"
 public_folder: "img"
@@ -17,5 +18,5 @@ collections:
             fields:
               - {label: "Kép", name: "image", widget: "image"}
               - {label: "Karakter Név", name: "title", widget: "string"}
-              - {label: "Típus", name: "type", widget: "string"}
+              - {label: "Típus (pl. Badge, Halfbody)", name: "type", widget: "string"}
               - {label: "Kategória", name: "category", widget: "select", options: [{label: "Kész", value: "finished"}, {label: "Sketch", value: "sketch"}]}
