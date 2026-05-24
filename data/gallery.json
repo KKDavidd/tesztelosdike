@@ -23,6 +23,12 @@
       "title": "Darky",
       "type": "PFP Sketch",
       "category": "sketch"
+    },
+    {
+      "image": "/img/pfp.jpg",
+      "title": "Teszt",
+      "type": "Kalapács",
+      "category": "finished"
     }
   ]
 }
