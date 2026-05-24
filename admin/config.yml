@@ -19,4 +19,4 @@ collections:
               - {label: "Kép", name: "image", widget: "image"}
               - {label: "Karakter Név", name: "title", widget: "string"}
               - {label: "Típus (pl. Badge, Halfbody)", name: "type", widget: "string"}
-              - {label: "Kategória", name: "category", widget: "select", options: ["finished", "sketch"]}
+              - {label: "Kategória", name: "category", widget: "select", options: [{label: "Kész", value: "finished"}, {label: "Sketch", value: "sketch"}]}
