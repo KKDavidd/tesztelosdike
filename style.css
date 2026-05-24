@@ -295,9 +295,9 @@ section {
 
 .gallery-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
     gap: 20px;
-    padding: 20px 0 60px 0; 
+    padding: 20px 0 60px 0;
 }
 
 #gallery-preview .gallery-grid {
@@ -572,7 +572,7 @@ footer {
     }
     
     .gallery-grid {
-        grid-template-columns: repeat(2, 1fr) !important;
+        grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)) !important;
     }
     
     .services-grid {
@@ -592,4 +592,51 @@ footer {
     .gallery-header h1 { 
         font-size: 1.6rem; 
     }
+}
+
+#nc-root {
+    background-color: var(--bg-dark) !important;
+}
+
+#nc-root * {
+    font-family: 'Outfit', sans-serif !important;
+}
+
+#nc-root div[class*="AppHeader"], 
+#nc-root header, 
+#nc-root div[class*="Toolbar"], 
+#nc-root div[class*="SidebarContainer"], 
+#nc-root aside {
+    background-color: var(--bg-darker) !important;
+    border-color: var(--border-color) !important;
+}
+
+#nc-root h1, #nc-root h2, #nc-root h3, #nc-root h4, #nc-root p, #nc-root span, #nc-root label, #nc-root strong {
+    color: var(--text-main) !important;
+}
+
+#nc-root input, #nc-root textarea, #nc-root select {
+    background-color: var(--bg-card) !important;
+    color: var(--text-main) !important;
+    border: 1px solid var(--border-color) !important;
+}
+
+#nc-root button, #nc-root div[class*="UploadButton"] {
+    background-color: var(--accent) !important;
+    color: #fff !important;
+    border: none !important;
+}
+
+#nc-root button:hover, #nc-root div[class*="UploadButton"]:hover {
+    background-color: var(--accent-hover) !important;
+}
+
+#nc-root div[class*="ControlContainer"] {
+    background-color: var(--bg-darker) !important;
+    border-color: var(--border-color) !important;
+}
+
+#nc-root div[class*="Card"] {
+    background-color: var(--bg-card) !important;
+    border-color: var(--border-color) !important;
 }
