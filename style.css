@@ -593,3 +593,120 @@ footer {
         font-size: 1.6rem; 
     }
 }
+
+#nc-root {
+    background-color: var(--bg-dark) !important;
+    color: var(--text-main) !important;
+    font-family: 'Outfit', sans-serif !important;
+    min-height: 100vh;
+}
+#nc-root > div > div, 
+#nc-root aside, 
+#nc-root header,
+#nc-root main {
+    background-color: var(--bg-darker) !important;
+    border-color: var(--border-color) !important;
+}
+#nc-root main {
+    background-color: var(--bg-dark) !important;
+}
+#nc-root h1, #nc-root h2, #nc-root h3, #nc-root h4, #nc-root h5, #nc-root h6, 
+#nc-root p, #nc-root span, #nc-root label, #nc-root strong {
+    color: var(--text-main) !important;
+}
+#nc-root a {
+    color: var(--text-muted) !important;
+}
+#nc-root a:hover {
+    color: #fff !important;
+}
+#nc-root input, 
+#nc-root textarea, 
+#nc-root select {
+    background-color: var(--bg-card) !important;
+    border: 1px solid var(--border-color) !important;
+    color: var(--text-main) !important;
+    border-radius: 8px !important;
+}
+#nc-root input:focus, 
+#nc-root textarea:focus, 
+#nc-root select:focus {
+    border-color: var(--accent) !important;
+    box-shadow: none !important;
+    outline: none !important;
+}
+#nc-root [class*="ToolbarContainer"],
+#nc-root [class*="AppHeader"] {
+    background-color: var(--bg-darker) !important;
+    border-color: var(--border-color) !important;
+}
+#nc-root [class*="ControlPaneContainer"],
+#nc-root [class*="EditorContainer"] {
+    background-color: var(--bg-dark) !important;
+}
+#nc-root button {
+    background-color: var(--bg-card) !important;
+    color: var(--text-main) !important;
+    border: 1px solid var(--border-color) !important;
+    border-radius: 30px !important;
+    font-family: 'Outfit', sans-serif !important;
+    transition: 0.3s !important;
+}
+#nc-root button:hover {
+    background-color: var(--accent) !important;
+    border-color: var(--accent) !important;
+    color: #fff !important;
+}
+#nc-root button[class*="primary"],
+#nc-root button[class*="Success"],
+#nc-root button[class*="Login"],
+#nc-root button[class*="Active"] {
+    background-color: var(--accent) !important;
+    color: #fff !important;
+    border: none !important;
+}
+#nc-root button[class*="primary"]:hover,
+#nc-root button[class*="Success"]:hover,
+#nc-root button[class*="Login"]:hover {
+    background-color: var(--accent-hover) !important;
+}
+#nc-root a[class*="Card"], #nc-root div[class*="Card"] {
+    background-color: var(--bg-card) !important;
+    border: 1px solid var(--border-color) !important;
+    border-radius: 15px !important;
+}
+#nc-root a[class*="Card"]:hover, #nc-root div[class*="Card"]:hover {
+    border-color: var(--text-muted) !important;
+}
+#nc-root [role="dialog"] {
+    background-color: var(--bg-darker) !important;
+}
+#nc-root [role="dialog"] header,
+#nc-root [role="dialog"] footer {
+    background-color: var(--bg-card) !important;
+    border-color: var(--border-color) !important;
+}
+#nc-root ul[role="menu"] {
+    background-color: var(--bg-card) !important;
+    border: 1px solid var(--border-color) !important;
+}
+#nc-root ul[role="menu"] li {
+    color: var(--text-main) !important;
+}
+#nc-root ul[role="menu"] li:hover {
+    background-color: var(--accent) !important;
+}
+#nc-root [class*="ListItemTopBar"] {
+    background-color: var(--bg-card) !important;
+    border-color: var(--border-color) !important;
+}
+#nc-root [class*="ObjectWidgetTopBar"] {
+    background-color: var(--bg-darker) !important;
+    border-color: var(--border-color) !important;
+}
+#nc-root [class*="EditorControlBar"] {
+    background-color: var(--bg-darker) !important;
+}
+#nc-root div[class*="PreviewPane"] {
+    background-color: var(--bg-dark) !important;
+}
