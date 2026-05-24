@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/x-icon" href="/img/favico.jpg">
-    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 </head>
 <body>
 
@@ -60,9 +59,9 @@
             <div class="about-text">
                 <h2 class="section-title">Rólam <i class="bi bi-paw"></i></h2>
                 <p>Szia! Katsumi vagyok, egy 21 éves mosómedve, digitális művész és karaktertervező.</p>
-                <p>Gyerekkorom óta érdekel a művészet és az alkotás világa. Mindig is szerettem különféle karaktereket kitalálni, megtervezni és életre kelteni. Az évek során a rajzolásból and a digitális művészetből nemcsak hobbim, hanem szenvedélyem is lett.</p>
+                <p>Gyerekkorom óta érdekel a művészet és az alkotás világa. Mindig is szerettem különféle karaktereket kitalálni, megtervezni és életre kelteni. Az évek során a rajzolásból and a digitális művészetből nemcsak hobbim, hanem szenvedélyemwidget lett.</p>
                 <p>Főként egyedi karakterek, furry artok és illusztrációk készítésével foglalkozom. Minden munkámba igyekszem beleadni a legjobb tudásomat, hogy a commissionjeim pontosan olyanok legyenek, amilyennek az ügyfeleim megálmodták.</p>
-                <p>Számomra a legfontosabb, hogy minden alkotás egyedi, részletgazdag és szeretettel készített legyen.</p>
+                <p>Számomra a legfontosajabb, hogy minden alkotás egyedi, részletgazdag és szeretettel készített legyen.</p>
                 <p>Köszönöm, hogy meglátogatod az oldalamat, és remélem, hogy munkáim elnyerik a tetszésed! ❤️</p>
                 <a href="#contact" class="btn btn-outline" style="margin-top: 20px;">Több rólam</a>
             </div>
@@ -248,16 +247,6 @@
                     grid.appendChild(a);
                 });
             });
-
-        if (window.netlifyIdentity) {
-            window.netlifyIdentity.on("init", user => {
-                if (!user) {
-                    window.netlifyIdentity.on("login", () => {
-                        document.location.href = "/admin/";
-                    });
-                }
-            });
-        }
     </script>
 </body>
 </html>
