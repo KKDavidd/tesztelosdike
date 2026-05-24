@@ -2,41 +2,34 @@
 
 #nc-root {
     font-family: 'Outfit', sans-serif !important;
-}
-
-#nc-root [class*="AppHeader"] {
-    background-color: #221d1d !important;
-}
-
-#nc-root > div > div > div {
     background-color: #2a2524 !important;
+    color: #e8e2df !important;
 }
 
-#nc-root [class*="SidebarContainer"], 
-#nc-root [class*="Card"] {
+#nc-root div[class*="AppHeader"],
+#nc-root aside {
+    background-color: #221d1d !important;
+    border-color: #4a413f !important;
+}
+
+#nc-root div[class*="ControlContainer"],
+#nc-root div[class*="Card"] {
     background-color: #36302e !important;
     border-color: #4a413f !important;
 }
 
-#nc-root h1, #nc-root h2, #nc-root h3, #nc-root h4, 
-#nc-root p, #nc-root span, #nc-root label, #nc-root a {
+#nc-root h1, #nc-root h2, #nc-root h3, #nc-root label, #nc-root span {
     color: #e8e2df !important;
+}
+
+#nc-root input, #nc-root textarea, #nc-root select {
+    background-color: #2a2524 !important;
+    color: #e8e2df !important;
+    border: 1px solid #4a413f !important;
 }
 
 #nc-root button {
     background-color: #5e524f !important;
     color: #fff !important;
     border: none !important;
-    border-radius: 8px !important;
-}
-
-#nc-root button:hover {
-    background-color: #756763 !important;
-}
-
-#nc-root input, #nc-root select, #nc-root textarea {
-    background-color: #36302e !important;
-    color: #e8e2df !important;
-    border: 1px solid #4a413f !important;
-    border-radius: 8px !important;
 }
