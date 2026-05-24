@@ -8,5 +8,38 @@
 </head>
 <body>
     <script src="https://unpkg.com/decap-cms@^3.1.0/dist/decap-cms.js"></script>
+    <script>
+        CMS.registerPreviewStyle("/style.css");
+
+        var GalleryPreview = createClass({
+            render: function() {
+                var items = this.props.entry.getIn(['data', 'items']);
+                
+                if (!items) {
+                    return h('div', {style: {padding: "20px", color: "white"}}, "Kérlek adj hozzá legalább egy képet!");
+                }
+
+                var galleryItems = items.map(function(item, index) {
+                    var imgPath = item.get('image');
+                    var imgUrl = imgPath ? this.props.getAsset(imgPath).toString() : '';
+                    var title = item.get('title') || '';
+                    var type = item.get('type') || '';
+
+                    return h('div', {className: "gallery-item", key: index},
+                        h('img', {src: imgUrl}),
+                        h('div', {className: "overlay", style: {opacity: 1}}, 
+                            h('span', {}, title),
+                            h('br'),
+                            h('i', {}, type)
+                        )
+                    );
+                }.bind(this));
+
+                return h('div', {className: "gallery-grid", style: {padding: "20px"}}, galleryItems);
+            }
+        });
+
+        CMS.registerPreviewTemplate("gallery", GalleryPreview);
+    </script>
 </body>
 </html>
