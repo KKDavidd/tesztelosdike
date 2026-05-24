@@ -4,157 +4,183 @@
       "image": "img/Freya-Badge.png",
       "title": "Freya",
       "type": "Badge",
-      "category": "finished"
+      "category": "finished",
+      "featured": true
     },
     {
       "image": "img/Marshall-MiniYCH.png",
       "title": "Marshall",
       "type": "Mini YCH",
-      "category": "finished"
+      "category": "finished",
+      "featured": true
     },
     {
       "image": "img/Gomby-26'ValentinnapiYCH.png",
       "title": "Gomby",
       "type": "Valentinnapi YCH 2026",
-      "category": "finished"
+      "category": "finished",
+      "featured": true
     },
     {
       "image": "img/KatsumiMiniYCH.png",
       "title": "Katsumi",
       "type": "Mini YCH",
-      "category": "finished"
+      "category": "finished",
+      "featured": true
     },
     {
       "image": "img/Senna&Katsumi-Születés.png",
       "title": "Senna és Katsumi",
       "type": "Születésnapi ajándék feral karakterekkel",
-      "category": "finished"
+      "category": "finished",
+      "featured": false
     },
     {
       "image": "img/Toffee-PFP.png",
       "title": "Toffee",
       "type": "PFP",
-      "category": "finished"
+      "category": "finished",
+      "featured": false
     },
     {
       "image": "img/Katsumi&Molly-fb+pet.png",
       "title": "Katsumi és Molly",
       "type": "Részleges Fullbody + Házikedvenc",
-      "category": "finished"
+      "category": "finished",
+      "featured": false
     },
     {
       "image": "img/Slide-Badge.png",
       "title": "Slide",
       "type": "Badge",
-      "category": "finished"
+      "category": "finished",
+      "featured": false
     },
     {
       "image": "img/26'ValentinP&V.png",
       "title": "Powler & Voldor",
       "type": "2026 Valentinapi YCH",
-      "category": "finished"
+      "category": "finished",
+      "featured": false
     },
     {
       "image": "img/Daren-Chibi.jpeg",
       "title": "Daren",
       "type": "Chibi",
-      "category": "finished"
+      "category": "finished",
+      "featured": false
     },
     {
       "image": "img/Toffee-Halfbody.png",
       "title": "Toffee",
       "type": "Halfbody",
-      "category": "finished"
+      "category": "finished",
+      "featured": false
     },
     {
       "image": "img/Darky-PFP.png",
       "title": "Darky",
       "type": "PFP",
-      "category": "finished"
+      "category": "finished",
+      "featured": false
     },
     {
       "image": "img/prowler-hb.png",
       "title": "Prowler",
       "type": "Halfbody",
-      "category": "finished"
+      "category": "finished",
+      "featured": false
     },
     {
       "image": "img/harley-pfp.png",
       "title": "Harley",
       "type": "PFP",
-      "category": "finished"
+      "category": "finished",
+      "featured": false
     },
     {
       "image": "img/Markus-pfp.png",
       "title": "Markus",
       "type": "PFP",
-      "category": "finished"
+      "category": "finished",
+      "featured": false
     },
     {
       "image": "img/angus-hb.png",
       "title": "Angus",
       "type": "Halfbody",
-      "category": "finished"
+      "category": "finished",
+      "featured": false
     },
     {
       "image": "img/nameless-Halfbody.png",
       "title": "---",
       "type": "Halfbody",
-      "category": "finished"
+      "category": "finished",
+      "featured": false
     },
     {
       "image": "img/Toffee-PFP-Sketch.png",
       "title": "Toffee",
       "type": "PFP Sketch",
-      "category": "sketch"
+      "category": "sketch",
+      "featured": false
     },
     {
       "image": "img/Katsumi&Molly-fb+pet-Sketch.png",
       "title": "Katsumi és Molly",
       "type": "Részleges Fullbody + Házikedvenc Sketch",
-      "category": "sketch"
+      "category": "sketch",
+      "featured": false
     },
     {
       "image": "img/Toffee-Halfbod.jpg",
       "title": "Toffee",
       "type": "Halfbody Sketch",
-      "category": "sketch"
+      "category": "sketch",
+      "featured": false
     },
     {
       "image": "img/Darky-PFPSketch.png",
       "title": "Darky",
       "type": "PFP Sketch",
-      "category": "sketch"
+      "category": "sketch",
+      "featured": false
     },
     {
       "image": "img/prowler-hb-sketch.png",
       "title": "Prowler",
       "type": "Halfbody Sketch",
-      "category": "sketch"
+      "category": "sketch",
+      "featured": false
     },
     {
       "image": "img/harley-pfpsketch.png",
       "title": "Harley",
       "type": "PFP Sketch",
-      "category": "sketch"
+      "category": "sketch",
+      "featured": false
     },
     {
       "image": "img/Markus-pfp-sketch.png",
       "title": "Markus",
       "type": "PFP Sketch",
-      "category": "sketch"
+      "category": "sketch",
+      "featured": false
     },
     {
       "image": "img/angus-hb-sketch.jpg",
       "title": "Angus",
       "type": "Halfbody Sketch",
-      "category": "sketch"
+      "category": "sketch",
+      "featured": false
     },
     {
       "image": "img/palacsinta-pfp-sketch.png",
       "title": "Palacsinta",
       "type": "PFP Sketch",
-      "category": "sketch"
+      "category": "sketch",
+      "featured": false
     }
   ]
 }
