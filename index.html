@@ -60,7 +60,7 @@
                 <h2 class="section-title">Rólam <i class="bi bi-paw"></i></h2>
                 <p>Szia! Katsumi vagyok, egy 21 éves mosómedve, digitális művész és karaktertervező.</p>
                 <p>Gyerekkorom óta érdekel a művészet és az alkotás világa. Mindig is szerettem különféle karaktereket kitalálni, megtervezni és életre kelteni. Az évek során a rajzolásból and a digitális művészetből nemcsak hobbim, hanem szenvedélyem lett.</p>
-                <p>Főként egyedi karakterek, furry artokและ illusztrációk készítésével foglalkozom. Minden munkámba igyekszem beleadni a legjobb tudásomat, hogy a commissionjeim pontosan olyanok legyenek, amilyennek az ügyfeleim megálmodták.</p>
+                <p>Főként egyedi karakterek, furry artok és illusztrációk készítésével foglalkozom. Minden munkámba igyekszem beleadni a legjobb tudásomat, hogy a commissionjeim pontosan olyanok legyenek, amilyennek az ügyfeleim megálmodták.</p>
                 <p>Számomra a legfontosabb, hogy minden alkotás egyedi, részletgazdag és szeretettel készített legyen.</p>
                 <p>Köszönöm, hogy meglátogatod az oldalamat, és remélem, hogy munkáim elnyerik a tetszésed! ❤️</p>
                 <a href="#contact" class="btn btn-outline" style="margin-top: 20px;">Több rólam</a>
@@ -94,7 +94,7 @@
             </div>
             <div class="process-card">
                 <h3>💬 2. Egyeztetés</h3>
-                <p>Átbeszéljük a részleteket, a kívánt stílust és az elkészítési időt. Ezután pontos árajánlatot adok, és tájékoztatlak a várható határidőről.</p>
+                <p>Átbeszéljük a részokelet, a kívánt stílust és az elkészítési időt. Ezután pontos árajánlatot adok, és tájékoztatlak a várható határidőről.</p>
             </div>
             <div class="process-card">
                 <h3>💳 3. Fizetés</h3>
@@ -239,13 +239,16 @@
             .then(res => res.json())
             .then(data => {
                 const grid = document.getElementById('preview-grid');
-                const featuredItems = data.items.filter(item => item.featured === true);
-                featuredItems.forEach(item => {
-                    const a = document.createElement('a');
-                    a.href = 'galeria.html';
-                    a.className = 'gallery-item';
-                    a.innerHTML = `<img src="${item.image}" alt="${item.title}"><div class="overlay"><span>${item.title}</span></div>`;
-                    grid.appendChild(a);
+                const slots = ['1', '2', '3', '4'];
+                slots.forEach(slot => {
+                    const foundItem = data.items.find(item => item.featured_order === slot);
+                    if (foundItem) {
+                        const a = document.createElement('a');
+                        a.href = 'galeria.html';
+                        a.className = 'gallery-item';
+                        a.innerHTML = `<img src="${foundItem.image}" alt="${foundItem.title}"><div class="overlay"><span>${foundItem.title}</span></div>`;
+                        grid.appendChild(a);
+                    }
                 });
             });
     </script>
