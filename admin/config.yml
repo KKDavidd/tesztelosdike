@@ -20,4 +20,4 @@ collections:
               - {label: "Karakter Név", name: "title", widget: "string"}
               - {label: "Típus (pl. Badge, Halfbody)", name: "type", widget: "string"}
               - {label: "Kategória", name: "category", widget: "select", options: [{label: "Kész", value: "finished"}, {label: "Sketch", value: "sketch"}]}
-              - {label: "Főoldalon kiemelt?", name: "featured", widget: "boolean", default: false}
+              - {label: "Főoldali sorszám (1-4)", name: "featured_order", widget: "select", options: [{label: "Nem szerepel", value: "none"}, {label: "1", value: "1"}, {label: "2", value: "2"}, {label: "3", value: "3"}, {label: "4", value: "4"}], default: "none"}
