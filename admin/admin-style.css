@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap');
+
+#nc-root {
+    font-family: 'Outfit', sans-serif !important;
+}
+
+#nc-root [class*="AppHeader"] {
+    background-color: #221d1d !important;
+}
+
+#nc-root > div > div > div {
+    background-color: #2a2524 !important;
+}
+
+#nc-root [class*="SidebarContainer"], 
+#nc-root [class*="Card"] {
+    background-color: #36302e !important;
+    border-color: #4a413f !important;
+}
+
+#nc-root h1, #nc-root h2, #nc-root h3, #nc-root h4, 
+#nc-root p, #nc-root span, #nc-root label, #nc-root a {
+    color: #e8e2df !important;
+}
+
+#nc-root button {
+    background-color: #5e524f !important;
+    color: #fff !important;
+    border: none !important;
+    border-radius: 8px !important;
+}
+
+#nc-root button:hover {
+    background-color: #756763 !important;
+}
+
+#nc-root input, #nc-root select, #nc-root textarea {
+    background-color: #36302e !important;
+    color: #e8e2df !important;
+    border: 1px solid #4a413f !important;
+    border-radius: 8px !important;
+}
