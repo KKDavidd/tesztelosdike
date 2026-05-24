@@ -5,37 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Katsumi Admin</title>
     <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+    <link rel="stylesheet" href="../style.css">
 </head>
 <body>
     <script src="https://unpkg.com/decap-cms@^3.1.0/dist/decap-cms.js"></script>
     <script>
-        CMS.registerPreviewStyle("/style.css");
+        CMS.registerPreviewStyle("../style.css");
 
-        var GalleryPreview = createClass({
+        const GalleryPreview = createClass({
             render: function() {
-                var items = this.props.entry.getIn(['data', 'items']);
+                const entry = this.props.entry;
+                const items = entry.getIn(['data', 'items']);
+                const getAsset = this.props.getAsset;
                 
                 if (!items) {
-                    return h('div', {style: {padding: "20px", color: "white"}}, "Kérlek adj hozzá legalább egy képet!");
+                    return h('div', {style: {padding: '40px', color: '#e8e2df', backgroundColor: '#2a2524', minHeight: '100vh'}}, "Kezdődjön az alkotás! Tölts fel egy képet.");
                 }
 
-                var galleryItems = items.map(function(item, index) {
-                    var imgPath = item.get('image');
-                    var imgUrl = imgPath ? this.props.getAsset(imgPath).toString() : '';
-                    var title = item.get('title') || '';
-                    var type = item.get('type') || '';
-
-                    return h('div', {className: "gallery-item", key: index},
-                        h('img', {src: imgUrl}),
-                        h('div', {className: "overlay", style: {opacity: 1}}, 
-                            h('span', {}, title),
-                            h('br'),
-                            h('i', {}, type)
-                        )
-                    );
-                }.bind(this));
-
-                return h('div', {className: "gallery-grid", style: {padding: "20px"}}, galleryItems);
+                return h('div', {style: {padding: '40px', backgroundColor: '#2a2524', minHeight: '100vh'}},
+                    h('div', {className: 'gallery-grid'},
+                        items.map(function(item, index) {
+                            const imagePath = item.get('image');
+                            const imageUrl = imagePath ? getAsset(imagePath).toString() : '';
+                            
+                            return h('div', {className: 'gallery-item', key: index},
+                                h('img', {src: imageUrl}),
+                                h('div', {className: 'overlay', style: {opacity: 1, background: 'linear-gradient(to top, rgba(0,0,0,0.9) 0%, transparent 60%)'}},
+                                    h('span', null, item.get('title') || 'Névtelen'),
+                                    h('br'),
+                                    h('i', null, item.get('type') || 'Típus')
+                                )
+                            );
+                        })
+                    )
+                );
             }
         });
 
