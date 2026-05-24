@@ -20,3 +20,4 @@ collections:
               - {label: "Karakter Név", name: "title", widget: "string"}
               - {label: "Típus (pl. Badge, Halfbody)", name: "type", widget: "string"}
               - {label: "Kategória", name: "category", widget: "select", options: [{label: "Kész", value: "finished"}, {label: "Sketch", value: "sketch"}]}
+              - {label: "Főoldalon kiemelt?", name: "featured", widget: "boolean", default: false}
