@@ -181,6 +181,13 @@
       "type": "PFP Sketch",
       "category": "sketch",
       "featured_order": "none"
+    },
+    {
+      "image": "/img/Untitled330 (3).png",
+      "title": "Palacsinta",
+      "type": "PFP",
+      "category": "finished",
+      "featured_order": "none"
     }
   ]
 }
